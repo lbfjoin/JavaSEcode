@@ -13,7 +13,6 @@ public class ForForDemo04 {
                 System.out.print(i + "时" + j + "分\t");
             }
             System.out.println();
-
         }
     }
 }
