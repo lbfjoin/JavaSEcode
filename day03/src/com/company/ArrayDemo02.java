@@ -19,7 +19,7 @@ public class ArrayDemo02 {
 //            System.out.print(arr[i] + "\t");
 //        }
         //求arr中最大的值
-        //定义最大值变量max，假设是第一个
+        //定义最大值变量max，假设是第一个/
         //遍历取出，如果比max值大，更新max的值
         //输出最大值
         Random random = new Random();
