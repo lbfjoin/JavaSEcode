@@ -11,5 +11,8 @@ public class Test03_StudentInfo {
         studentInfo.setName("刘宝枫");
         System.out.println(studentInfo.getName());
 
+        System.out.println(studentInfo.getAge());
+        studentInfo.setAge(22);
+        System.out.println(studentInfo.getAge());
     }
 }

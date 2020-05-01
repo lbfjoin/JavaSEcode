@@ -11,18 +11,14 @@ public class StudentInfo {
     //为成员方法提供公有的get方法（访问获取属性）、set方法（修改属性）
     public String getName() {
         return name;
-
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public int getAge() {
         return age;
     }
-
-    public void setName(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
     //this的含义

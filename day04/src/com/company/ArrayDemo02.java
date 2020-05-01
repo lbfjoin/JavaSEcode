@@ -23,7 +23,7 @@ public class ArrayDemo02 {
         arr2[1] = 8;
         System.out.println(arr[1]);
         //数组越界 两种可能；1.数组下标越界  2.数组中没有空间
-//        System.out.println(arr[3]);
+     //   System.out.println(arr[3]);//ArrayIndexOutOfBoundsException
         //数组的空指针异常
         //意味着arr将不会保存数组的地址，也就是不允许再操作数组了
 //        arr = null;//NuLLpointerException

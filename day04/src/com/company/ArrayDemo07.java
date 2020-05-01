@@ -28,5 +28,6 @@ public class ArrayDemo07 {
     }
     public static void chang2(int[] arr){
         arr[0] = 200;
+
     }
 }
