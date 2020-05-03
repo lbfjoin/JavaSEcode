@@ -73,12 +73,13 @@ public class JavaCodeExercise {
 //        }
 //        打印1~100之间所有的质数, 并按照3个一行的形式进行输出.
 //        int count = 0;
-//     a:   for (int i = 2; i <= 100; i++) {
-//            for (int j = 2; j < i ; j++) {
-//                if ( i % j == 0)
-//                    continue a ;
+//        a:
+//        for (int i = 2; i <= 100; i++) {
+//            for (int j = 2; j < i; j++) {
+//                if (i % j == 0)
+//                    continue a;
 //            }
-//         System.out.print(++count % 3 == 0 ? i + "\n" : i+"\t");
+//            System.out.print(++count % 3 == 0 ? i + "\n" : i + "\t");
 //
 //        }
 //        使用Random类，生成5个10以内的随机整数, 并将结果打印到控制台
@@ -203,20 +204,20 @@ public class JavaCodeExercise {
         //定义最大值变量max，假设是第一个
         //遍历取出，如果比max值大，更新max的值
         //输出最大值
-        Random random = new Random();
-        int[] arr = new int[12];
-        int max = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(101) + 1;
-            System.out.print(arr[i]+"\t");
-            if (max < arr[i]){
-                max = arr[i];
-            }
-
-        }
-        System.out.println();
-        System.out.println(max);
-
-
+//        Random random = new Random();
+//        int[] arr = new int[12];
+//        int max = arr[0];
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = random.nextInt(101) + 1;
+//            System.out.print(arr[i]+"\t");
+//            if (max < arr[i]){
+//                max = arr[i];
+//            }
+//
+//        }
+//        System.out.println();
+//        System.out.println(max);
+//
+//
     }
 }

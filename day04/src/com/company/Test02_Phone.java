@@ -4,7 +4,7 @@ package com.company;
  * @author lbf
  * @date 2020/4/26 19:16
  */
-public class Tset02_Phone {
+public class Test02_Phone {
     public static void main(String[] args) {
         //创建对象
         Phone p = new Phone();

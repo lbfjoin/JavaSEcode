@@ -1,15 +1,12 @@
 package com.company;
 
-import java.awt.*;
-
 /**
  * @author lbf
- * @date 2020/4/29 14:04
+ * @date 2020/5/3 15:57
  */
 public class StudentInfo1 {
     private String name;
     private int age;
-
     public String getName(){
         return name;
     }
@@ -20,7 +17,6 @@ public class StudentInfo1 {
         return age;
     }
     public void setAge(int age){
-
         this.age = age;
     }
 }
