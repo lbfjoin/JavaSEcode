@@ -1,12 +1,14 @@
 package com.company;
 
+import com.sun.java.accessibility.util.EventID;
+
 /**
  * @author lbf
- * @date 2020/5/3 15:57
+ * @date 2020/5/7 21:47
  */
 public class StudentInfo1 {
     private String name;
-    private int age;
+    private int  age;
     public String getName(){
         return name;
     }
