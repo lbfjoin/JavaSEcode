@@ -6,14 +6,14 @@ package com.company;
  */
 public class TestEmpJavaBean01 {
     public static void main(String[] args) {
-        EmpJavaBean01 e = new EmpJavaBean01("lbf",18,123456789,99999);
-        System.out.println(e.getName() + "=====" + e.getAge()+ "=====" + e.getSno() + "=====" + e.getSalary());
-        EmpJavaBean01 e1 = new EmpJavaBean01();
-        e1.setName("lbf");
-        e1.setAge(11);
-        e1.setSno(11111);
-        e1.setSalary(99999);
-        System.out.println(e1.getName() + "=====" + e1.getAge()+ "=====" + e1.getSno() + "=====" + e1.getSalary());
-
+        EmpJavaBean01 e = new EmpJavaBean01();
+        e.setName("lbf");
+        e.setAge(22);
+        e.setJobNO(258464);
+        e.setSalary(99999);
+        System.out.println(e.getName() + "-----" + e.getAge() + "-----" + e.getJobNO() + "-----" + e.getSalary());
+        System.out.println("==========");
+        EmpJavaBean01 e1 = new EmpJavaBean01("lbf", 22, 3333333, 44444444);
+        System.out.println(e1.getName()+ "-----" + e1.getAge() + "-----" + e1.getJobNO() + "-----" + e1.getSalary() );
     }
 }

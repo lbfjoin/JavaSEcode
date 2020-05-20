@@ -6,9 +6,9 @@ package com.company;
  */
 public class TestOwnArrayList02 {
     public static void main(String[] args) {
-        OwnArrayList01 list01 = new OwnArrayList01(10);
-        System.out.println(list01.getCapacity());
-        System.out.println(list01.getSize());
-        System.out.println(list01.isEmpty());
+        OwnArrayList02 o = new OwnArrayList02(11);
+        System.out.println(o.getCapacity());
+        System.out.println(o.getSize());
+        System.out.println(o.isEmpty());
     }
 }

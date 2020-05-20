@@ -8,23 +8,19 @@ import java.util.ArrayList;
  */
 public class Test02StudentArray01 {
     public static void main(String[] args) {
-        ArrayList<StudentJavaBean> s = new ArrayList<>();
-        StudentJavaBean l = new StudentJavaBean("l", 11);
-        StudentJavaBean l1 = new StudentJavaBean("b", 11);
-        StudentJavaBean l2 = new StudentJavaBean("f", 11);
-        StudentJavaBean l3 = new StudentJavaBean("lbf", 11);
-        s.add(l);
-        s.add(l1);
-        s.add(l2);
-        s.add(l3);
-        System.out.println(s.size());
-        System.out.print(s + "\t");
-        for (int i = 0; i < s.size(); i++) {
-            StudentJavaBean ss = s.get(i);
-            System.out.println(ss.getName() + " \t" + ss.getAge());
-//            System.out.println(s.get(i).getName()+ "\t" + s.get(i).getAge());
+        ArrayList<StudentJavaBean> list = new ArrayList<>();
+        StudentJavaBean l = new StudentJavaBean("l", 22);
+        StudentJavaBean b = new StudentJavaBean("b", 22);
+        StudentJavaBean f = new StudentJavaBean("f", 22);
+        StudentJavaBean lbf = new StudentJavaBean("lbf", 22);
+        list.add(l);
+        list.add(b);
+        list.add(f);
+        list.add(lbf);
+        System.out.println(list); // 输出的是地址
+        for (int i = 0; i < list.size(); i++) {
+            StudentJavaBean bean = list.get(i);
+            System.out.println(bean.getName() + ":" + bean.getAge());
         }
-        System.out.println();
-
     }
 }
