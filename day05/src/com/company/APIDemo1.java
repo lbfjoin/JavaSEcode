@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -20,6 +21,22 @@ public class APIDemo1 {
 //   }
     //2.Random 类
     //3.ArrayList 类
-
-
+    public static void main(String[] args) {
+    ArrayList<String> list = new ArrayList<>();
+    //创建学生对象
+    String s1 = "曹操";
+    String s2 = "刘备";
+    String s3 = "孙权";
+//打印学生ArrayList集合
+System.out.println(list); //  输出的为[ ]
+//把学生对象作为元素添加到集合
+list.add(s1);
+list.add(s2);
+list.add(s3);
+//打印学生ArrayList集合
+System.out.println(list);
 }
+}
+
+
+

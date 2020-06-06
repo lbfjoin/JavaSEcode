@@ -9,49 +9,56 @@ import java.security.PublicKey;
 public class EmpJavaBean01 {
     private String name;
     private int age;
-    private int jobNO;
-    private int salary;
+    private int wages;
+    private String occupation;
+    private static int number;
+    static {
+        number = 0;
+    }
 
     public EmpJavaBean01() {
     }
 
-    public EmpJavaBean01(String name, int age, int jobNO, int salary) {
+    public EmpJavaBean01(String name, int age , int wages, String occupation){
         this.name = name;
         this.age = age;
-        this.jobNO = jobNO;
-        this.salary = salary;
+        this.wages = wages;
+        this.occupation = occupation;
+        this.number = ++number;
     }
-
-    public String getName() {
+    public String getName(){
         return name;
     }
-
-    public int getJobNO() {
-        return jobNO;
-    }
-
-    public int getSalary() {
-        return salary;
+    public void setName(String name){
+        this.name = name;
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setJobNO(int jobNO) {
-        this.jobNO = jobNO;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public int getWages() {
+        return wages;
+    }
+
+    public void setWages(int wages) {
+        this.wages = wages;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    public static void showNumber() {
+        System.out.println("name" + number);
     }
 }
 

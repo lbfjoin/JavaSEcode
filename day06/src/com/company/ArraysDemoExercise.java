@@ -12,7 +12,7 @@ import java.util.Arrays;
  * 2.static void sort(int[] a) 对指定 int 型数组的指定范围按数字升序进行排序。
  * 3.copyOf(boolean[] original,int newlength) 复制指定的数组，截取或用false填充（如有必要），以使副本具有指定的长度。(返回一个新的数组。不影响原来的数组)
  */
-public class ArrayDemoExercise {
+public class ArraysDemoExercise {
     public static void main(String[] args) {
         int[] arr = {5, 1, 3, 2, 4};
         System.out.println(Arrays.toString(arr)); //把返回此对象本身，用字符串表示

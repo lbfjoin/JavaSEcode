@@ -1,0 +1,18 @@
+package com.company;
+
+/**
+ * @author lbf
+ * @date 2020/5/31 16:19
+ */
+public class ExtendDemoTest8 {
+    public static void main(String[] args) {
+//        Animal animal = new Animal();
+//        animal.eat();
+//        Cat cat = new Cat();
+//        cat.eatTest();
+        Cat cat1 = new Cat("淘气猫");
+        cat1.equals(cat1);
+        cat1.toString();
+        new Object();
+    }
+}

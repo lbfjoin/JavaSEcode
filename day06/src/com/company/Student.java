@@ -24,6 +24,7 @@ public class Student {
         this.age = age;
         this.sid = ++numberOfStudent;
     }
+
     public void show(){
         System.out.println("student:name" + name +",age = " + age + "sid = " + sid);
     }

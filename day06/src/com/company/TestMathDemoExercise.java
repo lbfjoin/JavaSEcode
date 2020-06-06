@@ -1,5 +1,8 @@
 package com.company;
 
+import javax.swing.plaf.metal.MetalTabbedPaneUI;
+import java.sql.SQLOutput;
+
 /**
  * @author lbf
  * @date 2020/5/19 16:46
@@ -8,13 +11,29 @@ package com.company;
  * 3.round(double a) 返回最接近参数的 long。(四舍五入）
  */
 public class TestMathDemoExercise {
+    //    public static void main(String[] args) {
+//        System.out.println(Math.abs(-3));
+//        System.out.println(Math.ceil(5.3));
+//        System.out.println(Math.ceil(-5.3));
+//        System.out.println(Math.ceil(5.6));
+//        System.out.println(Math.floor(5.3));
+//        System.out.println(Math.floor(-5.3));
+//        System.out.println(Math.floor(5.6));
+//        System.out.println(Math.round(5.3));
+//        System.out.println(Math.round(5.6));
+//        System.out.println(Math.round(-5.6));
+//    }
+    //计算在-10.8 到 5.9 之间
+    //绝对值大于等于6或者小于2.1的整数有多少个
     public static void main(String[] args) {
-        System.out.println(Math.abs(-2));//2
-        System.out.println(Math.ceil(5.3)); //6.0  double类型
-        System.out.println(Math.ceil(-5.3));//-5.0
-        System.out.println(Math.ceil(5.6));// 6.0
-        System.out.println(Math.round(5.3)); //5
-        System.out.println(Math.round(5.6));//6
-    }
+        int count = 0;
+        for (double i = Math.ceil(-10.8) ; i <= Math.ceil(5.9);i++) {
+            if (Math.abs(i) >= 6 || Math.abs(i) <= 2.1){
+                System.out.println(i);
+                count++;
+            }
+        }
+        System.out.println(count);
 
+    }
 }
