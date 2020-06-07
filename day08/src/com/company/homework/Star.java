@@ -11,7 +11,7 @@ public class Star {
     public void getUniverse(Universe universe){
         if (universe != null){
             if (universe instanceof Sun)
-            universe.doAnything();
+                universe.doAnything();
         }
     }
 }
