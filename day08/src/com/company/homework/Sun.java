@@ -4,7 +4,7 @@ package com.company.homework;
  * @author lbf
  * @date 2020/6/7 19:04
  */
-public class Sun implements Universe {
+public class Sun  implements Universe {
 
     @Override
     public void doAnything() {
