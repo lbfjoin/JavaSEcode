@@ -6,7 +6,7 @@ package com.company;
  */
 public class DynamicTest {
     public static void main(String[] args) {
-        //多态形式
+//        多态形式
 //        Dog dog = new Dog();
 //        格式：父类类型 对象名 = new 子类对象
 //        Animal dog = new Dog();
@@ -20,7 +20,6 @@ public class DynamicTest {
         Cat cat = new Cat();
         //调用showCatEat
 //        showCatEat(cat);
-//
 //        showDogEat(dog);
 
         showAnimalEat(dog);

@@ -5,7 +5,8 @@ package com.company;
  * @date 2020/6/7 14:23
  */
 public abstract class Animal implements Liveable{
-    public abstract void eat();
+
+    public  abstract void eat();
 
     @Override
     public void func() {

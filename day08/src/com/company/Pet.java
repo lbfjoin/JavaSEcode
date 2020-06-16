@@ -8,5 +8,4 @@ public interface Pet {
     public default void method() {
         System.out.println("Pet");
     }
-
 }

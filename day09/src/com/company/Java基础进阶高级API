@@ -1,0 +1,16 @@
+###Java基础进阶高级API：1.Object:1)类 Object 是类层次结构的根类。每个类都使用 Object 作为超类。所有对象（包括数组）都实现这个类的方法。
+                                2)如果没有指定父类，默认继承Object
+                                3)包含11个方法：toString()：     - 返回该对象的字符串表示。
+                                                              - 返回对象的全限定名+@+内存地址值
+                                                              - 我们希望打印person对象时输出person类的基本信息，而不是他的地址值，此时就要重写toString方法
+                                               equals()：       - 指示其他某个对象是否与此对象“相等”。
+                                                              - 默认是地址值的比较 ==，只要不是同一个对象，必然是false
+                                               getClass()     - 返回此 Object 的运行时类。
+                      2.Objects: equals：Object的equals方法容易抛出空指针异常，Objects进行了优化
+                                         ```
+                                           public static boolean equals(Object a, Object b) {
+                                                 return (a == b) || (a != null && a.equals(b));
+                                             }
+                                         ```
+                                 工具类：
+                      3.System类型： currentTimeMills() 返回以毫秒为单位的当前时间,可以用于测算程序运行的时间

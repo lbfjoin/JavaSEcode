@@ -23,7 +23,6 @@ public class Laptop  {
             }
             usb.close();
         }
-
     }
     public void shutDown(){
         System.out.println("笔记本关闭");
