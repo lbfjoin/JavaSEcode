@@ -5,4 +5,3 @@
                             3).作为返回值类型
                    3.interface:1)作为成员变量   private FaShuSkill faShuSkill;
                                2)作为方法参数和返回值类型
-                               3)

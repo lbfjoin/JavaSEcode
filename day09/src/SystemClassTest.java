@@ -12,7 +12,7 @@ public class SystemClassTest {
 //        System.out.println(System.currentTimeMillis());
 //        long start = System.currentTimeMillis();
 //        //程序
-//        for (int i = 0; i < 10000 ; i++) {
+//        for (int i = 0; i < 10 ; i++) {
 //            System.out.println(i);
 //        }
 //        long end = System.currentTimeMillis();
@@ -20,7 +20,7 @@ public class SystemClassTest {
 //    }
         long start = System.currentTimeMillis();
         System.out.println(start);
-        Thread.sleep(3600);
+        Thread.sleep(3600); //进程执行时间
         long end = System.currentTimeMillis();
         System.out.println(end);
         System.out.println("共耗时" + (end - start) + "毫秒");

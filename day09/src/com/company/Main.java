@@ -18,7 +18,10 @@ public class Main{
     public static void main(String[] args) {
         Person person1 = new Person("皮皮虾",22);
         Person person2 = new Person("皮皮虾",22);
-        System.out.println(person1.equals(person2));
+        Person person3 = new Person("皮皮虾",21);
+        System.out.println(person1); //Person{name='皮皮虾', age=22, live=true}
+        System.out.println(person1.equals(person2)); //true
+        System.out.println(person1.equals(person3)); //false
     }
 
 }
