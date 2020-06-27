@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.sql.Time;
 
 /**
  * @author lbf
@@ -18,41 +19,24 @@ import java.math.BigDecimal;
 @Entity
 @Data
 public class OrderMaster {
-    /*
-    订单id
-     */
+   // 订单id
    @Id
     private String orderId;
-    /*
-    买家名字
-     */
+   // 买家名字
     private String buyerName;
-    /*
-    订单的总金额
-     */
+    // 买家电话
+    private int buyerPhone;
+    //买家id
+    private String buyerOpenId;
+    // 订单总金额
     private BigDecimal orderAmount;
+    // 订单状态
+    private boolean orderStatus;
+    //支付状态
+    private boolean payStatus;
+    // 创建时间
+    private Time createTime;
+    // 修改时间
+    private Time updateTime;
 
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
-
-    public String getBuyerName() {
-        return buyerName;
-    }
-
-    public void setBuyerName(String buyerName) {
-        this.buyerName = buyerName;
-    }
-
-    public BigDecimal getOrderAmount() {
-        return orderAmount;
-    }
-
-    public void setOrderAmount(BigDecimal orderAmount) {
-        this.orderAmount = orderAmount;
-    }
 }
