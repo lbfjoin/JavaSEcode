@@ -25,7 +25,7 @@ public class OrderDetail {
     private String productIcon;
     //创建时间
     private Time createTime;
-    //修改时间
+    //更新时间
     private Time updateTime;
 
 }
