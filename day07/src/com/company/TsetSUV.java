@@ -21,8 +21,9 @@ public class TsetSUV {
         for (int i = 0; i < list.size(); i++) {
             SUV suv1 = list.get(i);
             System.out.println(suv1.getBrand() +":"+ suv1.getLength() +":"+ suv1.getPrice());
+            suv.judge();
         }
-        suv.judge();
+
 
 
     }

@@ -22,12 +22,15 @@ public class SUV extends Auto {
         int smallLength = 4295;
         int mediumLength = 5070;
         int legth = super.getLength();
-        if (legth <= smallLength)
+        if (super.getLength() <= smallLength) {
             System.out.println("小型车:" + getBrand() + getLength() + getPrice());
-        else if (legth > mediumLength)
+        }
+        else if (super.getLength() > mediumLength) {
             System.out.println("大型车:" + getBrand() + getLength() + getPrice());
-        else if (legth > smallLength && legth <= mediumLength) {
+        }
+        else if (super.getLength() > smallLength && super.getLength() <= mediumLength) {
             System.out.println("中型车:" + getBrand() + getLength() + getPrice());
-        }return suvs;
+        }
+        return suvs;
     }
 }
