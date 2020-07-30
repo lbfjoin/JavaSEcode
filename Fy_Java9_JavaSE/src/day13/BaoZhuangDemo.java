@@ -12,5 +12,5 @@ public class BaoZhuangDemo {
         i = i + 4; //自动拆箱
         int a = 100;
         System.out.println("a的值" + a);
-    }   r
+    }
 }

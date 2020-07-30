@@ -22,7 +22,7 @@ public class TestCalendar2 {
         month = calendar.get(Calendar.MONTH) + 1;
         day = calendar.get(calendar.DAY_OF_MONTH);
         System.out.println("set之后");
-        System.out.println(year + "月" + month + "月" + day + "日");  //2020月7月28日
+        System.out.println(year + "月" + month + "月" + day + "日");  //1998月7月28日
 
     }
 }
