@@ -14,6 +14,7 @@ public class Bootstrap {
 //        NoramlMode noramlMode = new NoramlMode();
 //        myRed.setOpenWay(noramlMode);
         RandomMode randomMode = new RandomMode();
+        myRed.setOpenWay(randomMode);
 
 
 

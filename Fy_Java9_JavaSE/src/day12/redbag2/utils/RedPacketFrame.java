@@ -1,7 +1,4 @@
-package day12.myredbag.utils;
-
-import day12.myredbag.NoramlMode;
-import day12.myredbag.RandomMode;
+package day12.redbag2.utils;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,7 +6,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -426,11 +426,19 @@ public abstract class RedPacketFrame extends JFrame {
                     tf.setFont(showNameFont);
                     tf.setHorizontalAlignment(JTextField.LEFT);
                     if (i == moneyList.size() - 1) {
-                        tf.setText(ownerName + "：\t" + moneyList.get(i) / 100.0 + "元");
+                        Calendar instance = Calendar.getInstance();
+                        Date time = instance.getTime();
+                        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+                        tf.setText(ownerName + "：\t" + moneyList.get(i) / 100.0 + "元"+ format.format(time));
 
                     } else {
+                        Calendar instance = Calendar.getInstance();
+                        Date time = instance.getTime();
+                        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
 
-                        tf.setText("群成员-" + i + "：\t" + moneyList.get(i) / 100.0 + "元");
+
+                        tf.setText("群成员-" + i + "：\t" + moneyList.get(i) / 100.0 + "元" + format.format(time));
+
                     }
                     showPanel2.add(tf);
                 }
@@ -477,7 +485,7 @@ public abstract class RedPacketFrame extends JFrame {
         this.ownerName = ownerName;
     }
 
-    public void setOpenWay(RandomMode openWay) {
-        this.openWay = (OpenMode) openWay;
+    public void setOpenWay(OpenMode openWay) {
+        this.openWay = openWay;
     }
 }
