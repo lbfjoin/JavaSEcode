@@ -87,9 +87,9 @@ public class StudentDaoImpl implements StudentDao {
             conn.setAutoCommit(false);
             String sql = " delete from studentManage where id = ? ";
             pstmt = conn.prepareStatement(sql);
-            Student stu = new Student();
 
-            pstmt.setInt(1, stu.getId());
+
+            pstmt.setInt(1, id);
             pstmt.executeUpdate();
 
 
